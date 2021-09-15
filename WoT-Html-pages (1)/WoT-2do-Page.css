@@ -1,0 +1,180 @@
+body, html, #background, #center{
+width: auto;
+}
+#center{
+    position:relative;
+}
+#right-menu-btn{
+display:none;
+}
+#left-menu-btn{
+display: none;
+}
+#right-icon-menu-btn{
+ display: none;
+}
+#menu{
+height: 50px;
+width: 50px;
+background-color: #00f0f0;
+border-radius: 4px;
+border: 3px solid #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 4px 0px;
+}
+#menu-one{
+height: 50px;
+width: 50px;
+background-color: #ff3c3c;
+border-radius: 4px;
+border: 3px solid #ffff00;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 4px 0px;
+}
+#menu-two{
+height: 50px;
+width: 50px;
+background-color: #979797;
+border-radius: 4px;
+border: 3px solid #ffff00;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 4px 0px;
+}
+#bar{
+height: 8px;
+width: 35px;
+background-color: beige;
+margin: 3px 0px;
+}
+#reveal{
+ display: flex;
+ flex-direction: row;
+ padding: 10px 0px;
+}
+#contentOuterContainer{
+ display: block;
+ visibility: visible;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+ body, html{
+   z-index: 0;
+   width: auto;
+   max-width: 992px;
+   min-width: 768px;
+ }
+ #bodyWrapper{
+    position: relative;
+ }
+ #header{
+   border: 0;
+   box-shadow: 0;
+ }
+ #header:before{
+    height: 24px;
+    max-width: 992px;
+    min-width: 768px;
+    margin: auto;
+    position: relative;
+    left: 10%;
+ }
+ #header:after{
+    height: 42px;
+    max-width: 992px;
+    min-width: 768px;
+    margin: auto;
+    position: relative;
+    left: 10%;
+}
+ #servertime{
+    position: absolute;
+    left: 12%;
+ }
+ #right-icon-menu-btn{
+display: block;
+}
+ #outOfGame{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 34px;
+    margin-top: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 10%;
+ }
+ #outOfGame .reveal li{
+   height: 30px;
+   width: 30px;
+   margin: 4px 0px;
+ }
+ #reveal{
+display: none;
+ }
+ .reveal{
+  display: flex;
+  flex-direction: column;
+ }
+ #logo{
+   display: none;
+ }
+ #center{
+   height: 1100px;
+   position: relative;
+   z-index: 0;
+   display: flex;
+   justify-content: center;
+ }
+ #sidebarBeforeContent{
+    display: none;
+    top: 100px;
+    z-index: 2;
+    margin-top: 10px;
+ }
+ #map_details{
+    top: 60px;
+    z-index: 10;
+    margin-top: 10px;
+    z-index: 1;
+}
+#contentOuterContainer{
+  width: 550px;
+  z-index: 1;
+  position: fixed;
+  display: block;
+}
+.contentContainer, #resfeld{
+ top: 100px;
+ height:300px;
+ width: 330px;
+ z-index: -1;
+}
+#sidebarAfterContent{
+   display: none;
+   top: 100px;
+   z-index: 2;
+   margin-top: 10px;
+  }
+  #left-menu-btn{
+    position: absolute;
+    top: 4.5%;
+    left: 24%;
+    display: block;
+  }
+  #right-menu-btn{
+  position: absolute;
+  top: 4.5%;
+  right: 24%;
+  display: block;
+}
+}

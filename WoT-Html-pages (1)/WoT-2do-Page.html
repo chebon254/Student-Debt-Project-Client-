@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>War Of Tribe x100 (Beta)</title>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="content-language" content="en" />
+    <link href="https://ts1.waroftribe.com/gpack/lang/en/compact.css" rel="stylesheet" type="text/css" />
+    <link href="https://ts1.waroftribe.com/gpack/lang/en/lang.css" rel="stylesheet" type="text/css" />
+
+    <!-- == StyleSheet == -->
+    <!-- ========================================================== -->
+    <link rel="stylesheet" href="WoT-2do-Page.css" type="text/css">
+    <!-- ========================================================== -->
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/jquery.md5.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/d3/d3.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/d3/d3pie.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/gsap/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/gsap/minified/plugins/MorphSVGPlugin.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/Game/General/General.js"></script>
+    <script type="text/javascript">
+      var j$ = $.noConflict();
+    </script>
+    <script type="text/javascript">
+      window.TravianDefaults = {
+        Map: {
+          Size: {
+            width: 201,
+            height: 201,
+            left: -100,
+            right: 100,
+            bottom: -100,
+            top: 100
+          }
+        }
+      };
+
+      function getMapSize() {
+        return 100;
+      }
+
+      function getAutoReloadStatus() {
+        return 1;
+      }
+    </script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/crypt.js"></script>
+    <link rel="icon" href="https://ts1.waroftribe.com/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript">
+      Travian.Translation.add({
+        'allgemein.anleitung': "Instructions",
+        'allgemein.cancel': "Cancel",
+        'allgemein.ok': "Ok",
+        'allgemein.close': "Close",
+        'cropfinder.keine_ergebnisse': "There are no results"
+      });
+      Travian.applicationId = "T4.4 Game";
+      Travian.Game.version = "4.4";
+      Travian.Game.worldId = "WoT";
+      Travian.Game.speed = 100;
+      Travian.Templates = {};
+      Travian.Templates.ButtonTemplate = " < button > \n\ t < div class = \"button-container addHoverClick\">\n\t\t < div class = \"button-background\">\n\t\t\t < div class = \"buttonStart\">\n\t\t\t\t < div class = \"buttonEnd\">\n\t\t\t\t\t < div class = \"buttonMiddle\"><\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t < div class = \"button-content\"><\/div>\n\t<\/div>\n<\/button>\n";
+    </script>
+    <script type="text/javascript">
+      Travian.Game.eventJamHtml = '&lt;a href=&quot;http://t4.answers.travian.ir/index.php?aid=249#go2answer&quot; target=&quot;blank&quot; title=&quot;پاسخ&zwnj;های تراوین&quot;&gt;&lt;span class=&quot;c0 t&quot;&gt;0:00:0&lt;/span&gt;?&lt;/a&gt;'.unescapeHtml();
+      Travian.Game.eventJamHtml = '&lt;a href=&quot;javascript:void&quot; onclick=&quot;document.location.reload();&quot;&gt;&lt;img src=&quot;img/refresh.png&quot;&gt;&lt;/a&gt;'.unescapeHtml();
+    </script>
+  </head>
+  <script type="text/javascript">
+    window.ajaxToken = "765784eba4d5b4156277301c5674432faca910fc";
+    window._player_uuid = '';
+    Travian.Game.Preferences.initialize({
+      "highlightsToggle": "true",
+      "travian_toggle_hero": "expanded",
+      "travian_toggle_infobox": "expanded",
+      "travian_toggle_villagelist": "collapsed",
+      "travian_toggle_alliance": "expanded",
+      "WMBlueprints": "[]",
+      "QuestDialogPosition": "{\"position\":null,\"preferenceKey\":\"QuestDialogPosition\"}"
+    });
+    Travian.Game.Quest.init();
+  </script>
+  <body class="v35 webkit  en village1 perspectiveResources ltr season- buildingsV3">
+    <div id="reactDialogWrapper"></div>
+    <script type="text/javascript">
+      window.ajaxToken = 'de3768730d5610742b5245daa67b12cd';
+    </script>
+    <div id="background">
+      <div id="bodyWrapper">
+        <div id="header">
+          <a id="logo" href="http://ts1.waroftribe.com/" target="_blank" title="War Of Tribe x100 (Beta)"></a>
+          <ul id="navigation">
+            <li id="n1" class="villageResources">
+              <a class="active " href="dorf1.php" accesskey="1" title="Resources||"></a>
+            </li>
+            <li id="n2" class="villageBuildings">
+              <a class="inactive" href="dorf2.php" accesskey="2" title="Village Center||"></a>
+            </li>
+            <li id="n3" class="map">
+              <a href="karte.php" accesskey="3" title="Map||"></a>
+            </li>
+            <li id="n4" class="statistics">
+              <a href="statistiken.php" accesskey="4" title="Statistics||"></a>
+            </li>
+            <li id="n5" class="reports">
+              <a href="berichte.php" accesskey="5" title="Reports|| New Report(s): 6373"></a>
+              <div class='speechBubbleContainer '>
+                <div class='speechBubbleBackground'>
+                  <div class='start'>
+                    <div class='end'>
+                      <div class='middle'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class='speechBubbleContent'>99+</div>
+              </div>
+            </li>
+            <li id="n6" class="messages">
+              <a href="nachrichten.php" accesskey="6" title="Message|| New Message(s): 0"></a>
+            </li>
+            <li id="n7" class="gold">
+              <a href="#" accesskey="7" onclick="window.fireEvent('startPaymentWizard', {}); this.blur(); return false;" class=""></a>
+            </li>
+          </ul>
+          <script type="text/javascript">
+            window.addEvent('domready', function() {
+              Travian.Game.Layout.goldButtonAnimation();
+            });
+          </script>
+          <div id="goldSilver">
+            <div class="gold">
+              <img src="https://ts1.waroftribe.com/img/x.gif" alt="Gold" title="Gold" class="gold" />
+              <span id="ajaxReplaceableGoldAmount_2" class="ajaxReplaceableGoldAmount">134</span>
+            </div>
+            <div class="silver">
+              <a href="hero_auction.php">
+                <img src="https://ts1.waroftribe.com/img/x.gif" alt="Silver" title="Silver" class="silver" />
+              </a>
+              <span class="ajaxReplaceableSilverAmount">35,608</span>
+            </div>
+          </div>
+          <ul id="outOfGame" class="ltr">
+            <div id="right-icon-menu-btn" onclick="navReveal()" class="dropbtn">
+                <div id="menu">
+                  <div id="bar"></div>
+                  <div id="bar"></div>
+                  <div id="bar"></div>
+                </div>
+            </div>
+            <div class="reveal" id="reveal">
+                
+            <li class="profile ">
+                <a href="spieler.php">
+                  <img src="https://ts1.waroftribe.com/img/x.gif" title="Profile||Edit profile description.">
+                </a>
+              </li>
+              <li class="options ">
+                <a href="options.php">
+                  <img src="https://ts1.waroftribe.com/img/x.gif" title="Options||Edit account settings.">
+                </a>
+              </li>
+              <li class="forum ">
+                <a target="_blank" href="#">
+                  <img src="https://ts1.waroftribe.com/img/x.gif" title="Forum||Meet other players on our external forum.">
+                </a>
+              </li>
+              <li class="help ">
+                <a href="nachrichten.php?t=1&id=6">
+                  <img src="https://ts1.waroftribe.com/img/x.gif" alt="Help" title="Help||Manuals, Answers and Support">
+                </a>
+              </li>
+              <li class="logout ">
+                <a href="logout.php">
+                  <img src="https://ts1.waroftribe.com/img/x.gif" alt="Logout" title="Logout||Log out from the game.">
+                </a>
+              </li>
+              <li class="clear ">&nbsp;</li>
+            </div>
+          </ul>
+          <script type="text/javascript">
+            $$('#outOfGame li.logout a').addEvent('click', function() {
+              Travian.WindowManager.getWindows().each(function($dialog) {
+                Travian.WindowManager.unregister($dialog);
+              });
+            });
+          </script>
+        </div>
+        <div id="center">
+            <div id="left-menu-btn" onclick="myFunction()" class="dropbtn">
+                <div id="menu-one">
+                  <div id="bar"></div>
+                  <div id="bar"></div>
+                  <div id="bar"></div>
+                </div>
+            </div>
+          <div id="sidebarBeforeContent" class="sidebar beforeContent">
+            <div id="sidebarBoxHero" class="sidebarBox toggleable">
+              <div class="sidebarBoxBaseBox">
+                <div class="baseBox baseBoxTop">
+                  <div class="baseBox baseBoxBottom">
+                    <div class="baseBox baseBoxCenter"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebarBoxInnerBox">
+                <div class="innerBox header ">
+                  <button id="heroImageButton" onclick="window.location.href='hero_inventory.php';" class="heroImageButton " type="button" title="Overview||Hero's native village is «00.HZH». in road">
+                    <img class="heroImage" src="https://ts1.waroftribe.com/cacheon/hcache/64x82/1340041101.png" alt="">
+                  </button>
+                  <div class="playerName">
+                    <img src="https://ts1.waroftribe.com/img/x.gif" class="nation nationBig nation3" alt="Gauls" title="Gauls">HZH
+                  </div>
+                  <div class="buttonsWrapper">
+                    <button type="button" id="button5225ee283b159" class="layoutButton auctionWhite green  " onclick="return false;" title="">
+                      <div class="button-container addHoverClick ">
+                        <i></i>
+                      </div>
+                    </button>
+                    <script type="text/javascript">
+                      if ($('button5225ee283b159')) {
+                        $('button5225ee283b159').addEvent('click', function() {
+                          window.fireEvent('buttonClicked', [this, {
+                            "type": "green",
+                            "onclick": "return false;",
+                            "loadTitle": true,
+                            "boxId": "hero",
+                            "disabled": false,
+                            "speechBubble": "",
+                            "class": "",
+                            "id": "button5225ee283b159",
+                            "redirectUrl": "hero_auction.php",
+                            "redirectUrlExternal": ""
+                          }]);
+                        });
+                      }
+                    </script>
+                    <button type="button" id="button5225ee283b28a" class="layoutButton adventureWhite green  " title="Adventures:||Available Adventures: 10" onclick="return false;">
+                      <div class="button-container addHoverClick ">
+                        <i></i>
+                      </div>
+                      <div class="speechBubbleContainer ">
+                        <div class="speechBubbleBackground">
+                          <div class="start">
+                            <div class="end">
+                              <div class="middle"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="speechBubbleContent">10</div>
+                      </div>
+                      <div class="clear"></div>
+                    </button>
+                    <script type="text/javascript">
+                      if ($('button5225ee283b28a')) {
+                        $('button5225ee283b28a').addEvent('click', function() {
+                          window.fireEvent('buttonClicked', [this, {
+                            "type": "green",
+                            "onclick": "return false;",
+                            "loadTitle": true,
+                            "boxId": "hero",
+                            "disabled": false,
+                            "speechBubble": "10",
+                            "class": "",
+                            "id": "button5225ee283b28a",
+                            "redirectUrl": "hero_adventure.php",
+                            "redirectUrlExternal": ""
+                          }]);
+                        });
+                      }
+                    </script>
+                  </div>
+                </div>
+                <div class="innerBox content">
+                  <div class="heroStatusMessage">
+                    <img alt="Hero is healthy" src="https://ts1.waroftribe.com/img/x.gif" class="heroStatus103"> Hero is defending
+                  </div>
+                  <div class="progressBars">
+                    <div class="heroHealthBarBox alive" title="Heal: 100%">
+                      <a href="hero.php?t=1">
+                        <img src="https://ts1.waroftribe.com/img/x.gif" class="injury">
+                      </a>
+                      <div class="bar" style="width:100%">&nbsp;</div>
+                    </div>
+                    <div class="heroXpBarBox" title="Experience: 61,675,011">
+                      <a href="hero.php?t=1">
+                        <img src="https://ts1.waroftribe.com/img/x.gif" class="iExperience">
+                      </a>
+                      <div class='bar' style='width:28.8%'>&nbsp;</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="innerBox footer">
+                  <button type="button" class="toggle" onclick="if (!window.__cfRLUnblockHandlers) return false; ">
+                    <div class="button-container addHoverClick">
+                      <svg class="toggle-caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 32.9">
+                        <style>
+                          .caret {
+                            fill: url(#caret_to_bottom_fill);
+                            stroke: url(#caret_to_bottom_stroke);
+                          }
+                        </style>
+                        <linearGradient id="caret_to_bottom_fill" x1="22.4983" x2="22.4983" y1="26.6416" y2="8.0344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 33.833)">
+                          <stop offset=".1147" stop-color="#DADED4"></stop>
+                          <stop offset=".1452" stop-color="#F9FBF7"></stop>
+                          <stop offset=".1551" stop-color="#FFFFFF"></stop>
+                        </linearGradient>
+                        <linearGradient id="caret_to_bottom_stroke" x1="22.4983" x2="22.4983" y1="26.6416" y2="8.0344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 33.833)">
+                          <stop offset="0" stop-color="#7C9A58"></stop>
+                          <stop offset=".2" stop-color="#60A200"></stop>
+                          <stop offset=".4" stop-color="#63A500"></stop>
+                          <stop offset="1" stop-color="#7DB211"></stop>
+                        </linearGradient>
+                        <path class="down_glow" d="M39 5.9c-.4-.5-1-.8-1.5-.9H7.4c-.6 0-1.1.2-1.5.9C5.5 6.3 5 7.7 5 9c0 .7 0 2.5.5 3.1l15.1 15.1c.4.5 1.3.7 1.9.7.6 0 1.5-.2 2-.7l14.9-15c.4-.5.6-2 .6-2.7.1-1.2-.5-3.4-1-3.6z"></path>
+                        <path class="up_glow" d="M39.2,8.2c-0.4-0.5-1.6-1-2.1-1.1l-29.2,0c-0.6,0-1.6,0.4-2.1,1C5.4,8.6,5,9.7,5,11 c0,0.7,0.1,3.3,1.3,4.8l13,13.1c0.4,0.5,2.5,1,3.1,1c0.6,0,2.7-0.5,3.8-1.5L38.4,16c1.4-1.4,1.6-3.8,1.6-4.5 C40.1,10.3,39.9,8.7,39.2,8.2z"></path>
+                        <path class="topshadow" d="M39.8 10.8c.5-1.7.1-5.7-2.5-5.8H7.2c-2.4.1-2.4 4.6-2.1 5.6 0 .1.2.1.2.1.8-.2.9-2 3.4-2.1 6.8-.1 22.1 0 28.5.1 2.6.1 2.1 1.9 2.6 2.1z"></path>
+                        <path class="bottomshadow" d="M39.4,8.9C39,8.5,38.5,8.3,38,8.2L7.1,8.3C6.5,8.3,6,8.5,5.6,9C5.2,9.4,5,9.9,5,10.5 c0,0.6-0.2,3.6,1.7,5.6l12.7,12.8c1,0.7,2,1,3.1,1c1.1,0,2.7-0.6,3.8-1.5L38.4,16c1.9-2.1,1.6-5.1,1.6-5.7 C40.1,9.8,39.9,9.3,39.4,8.9z"></path>
+                        <path class="caret" d="M38.3 8.8c-.4-.4-.9-.6-1.4-.7H8.1c-.6 0-1.1.2-1.5.7-.4.4-.6.9-.6 1.5s.2 1 .6 1.5L21 26.2c.4.4.9.6 1.5.6s1-.2 1.5-.6l14.3-14.5c.4-.4.6-.9.6-1.5.1-.5-.1-1-.6-1.4z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <script type="text/javascript">
+                    window.addEvent('domready', function() {
+                      Travian.Translation.add({
+                        'hero_collapsed': "Display information",
+                        'hero_expanded': "Hide information"
+                      });
+                      var box = $('sidebarBoxHero');
+                      box.down('button.toggle').addEvent('click', function(e) {
+                        Travian.Game.Layout.toggleBox(box, 'travian_toggle', 'hero');
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div id="sidebarBoxAlliance" class="sidebarBox   ">
+              <div class="sidebarBoxBaseBox">
+                <div class="baseBox baseBoxTop">
+                  <div class="baseBox baseBoxBottom">
+                    <div class="baseBox baseBoxCenter"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebarBoxInnerBox">
+                <div class="innerBox header ">
+                  <div class="buttonsWrapper">
+                    <button type="button" id="button5225ee283d5ac" class="layoutButton embassyWhite green " title="The Embassy" onclick="window.location.href='build.php?id=31&newdid=16193'; return false;">
+                      <div class="button-container addHoverClick">
+                        <i></i>
+                      </div>
+                    </button>
+                    <button type="button" id="button5225ee283d8f8" title='Alliance Forum || Go to the alliance forum' class="layoutButton overviewWhite green  " onclick="return false;">
+                      <div class="button-container addHoverClick ">
+                        <i></i>
+                      </div>
+                    </button>
+                    <script type="text/javascript">
+                      if ($('button5225ee283d8f8')) {
+                        $('button5225ee283d8f8').addEvent('click', function() {
+                          window.fireEvent('buttonClicked', [this, {
+                            "type": "green",
+                            "onclick": "return false;",
+                            "loadTitle": false,
+                            "boxId": "alliance",
+                            "disabled": true,
+                            "speechBubble": "",
+                            "class": "",
+                            "id": "button5225ee283d8f8",
+                            "redirectUrl": "allianz.php",
+                            "redirectUrlExternal": ""
+                          }]);
+                        });
+                      }
+                    </script>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="boxTitle">
+                    <div class='sideInfoAlly'>
+                      <a class='signLink' href='allianz.php' title='The Embassy'>
+                        <span class='wrap'>XNA</span>
+                      </a>
+                      <a href='allianz.php?s=2' class='crest' title='Alliance Forum || Go to the alliance forum'>
+                        <img src='https://ts1.waroftribe.com/img/x.gif'>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="innerBox content"></div>
+                <div class="innerBox footer"></div>
+              </div>
+            </div>
+            <div id="sidebarBoxInfobox" class="sidebarBox toggleable expanded">
+              <div class="sidebarBoxBaseBox">
+                <div class="baseBox baseBoxTop">
+                  <div class="baseBox baseBoxBottom">
+                    <div class="baseBox baseBoxCenter"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebarBoxInnerBox">
+                <div class="innerBox header ">
+                  <div class="boxTitle">Info box</div>
+                  <span class="messageShortInfo"> 0 ‎‭‭‬×‬‎ <img class="messages" src="https://ts1.waroftribe.com/img/x.gif" alt="Total messages: 0">
+                  </span>
+                </div>
+                <div class="innerBox content">
+                  <ul></ul>
+                  <ul>
+                    <li class="">
+                      <a title="Contact Support" target="_blank" style="color: red; font-weight: bold" href="nachrichten.php?t=1&id=6"> &#9658; Contact Support</a>
+                    </li>
+                    <li class="newTab">
+                      <a target="_blank" style="color: red; font-weight: bold;" href="https://discord.gg/MwFF2Z8Tbd"> &#9633; Check our Discord!</a>
+                    </li>
+                    <!-- <li class="newTab"><a target="_blank" id="foo" style="color: red; font-weight: bold;" href="https://www.arena-top100.com/index.php?a=in&amp;u=traviannn-5221&amp;id=x100beta_8"> &#9633; Vote + 25 gold (Arena Top) </a></li><li class="newTab"><a target="_blank" id="foo" style="color: red; font-weight: bold;" href="http://topg.org/travian-private-servers/in-623607-x100beta_8"> &#61441; Vote + 25 gold (Top G) </a></li><li class="newTab"><a target="_blank" id="foo" style="color: red; font-weight: bold;" href="https://gtop100.com/topsites/Travian/sitedetails/Travian2-99247?vote=1&amp;pingUsername=x100beta_8"> &#61441; Vote + 25 gold (Top 100 Games) </a></li> //-->
+                  </ul>
+                </div>
+                <div class="innerBox footer">
+                  <button type="button" class="toggle" onclick="">
+                    <div class="button-container addHoverClick">
+                      <svg class="toggle-caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 32.9">
+                        <style>
+                          .caret {
+                            fill: url(#caret_to_bottom_fill);
+                            stroke: url(#caret_to_bottom_stroke);
+                          }
+                        </style>
+                        <linearGradient id="caret_to_bottom_fill" x1="22.4983" x2="22.4983" y1="26.6416" y2="8.0344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 33.833)">
+                          <stop offset=".1147" stop-color="#DADED4"></stop>
+                          <stop offset=".1452" stop-color="#F9FBF7"></stop>
+                          <stop offset=".1551" stop-color="#FFFFFF"></stop>
+                        </linearGradient>
+                        <linearGradient id="caret_to_bottom_stroke" x1="22.4983" x2="22.4983" y1="26.6416" y2="8.0344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 33.833)">
+                          <stop offset="0" stop-color="#7C9A58"></stop>
+                          <stop offset=".2" stop-color="#60A200"></stop>
+                          <stop offset=".4" stop-color="#63A500"></stop>
+                          <stop offset="1" stop-color="#7DB211"></stop>
+                        </linearGradient>
+                        <path class="down_glow" d="M39 5.9c-.4-.5-1-.8-1.5-.9H7.4c-.6 0-1.1.2-1.5.9C5.5 6.3 5 7.7 5 9c0 .7 0 2.5.5 3.1l15.1 15.1c.4.5 1.3.7 1.9.7.6 0 1.5-.2 2-.7l14.9-15c.4-.5.6-2 .6-2.7.1-1.2-.5-3.4-1-3.6z"></path>
+                        <path class="up_glow" d="M39.2,8.2c-0.4-0.5-1.6-1-2.1-1.1l-29.2,0c-0.6,0-1.6,0.4-2.1,1C5.4,8.6,5,9.7,5,11 c0,0.7,0.1,3.3,1.3,4.8l13,13.1c0.4,0.5,2.5,1,3.1,1c0.6,0,2.7-0.5,3.8-1.5L38.4,16c1.4-1.4,1.6-3.8,1.6-4.5 C40.1,10.3,39.9,8.7,39.2,8.2z"></path>
+                        <path class="topshadow" d="M39.8 10.8c.5-1.7.1-5.7-2.5-5.8H7.2c-2.4.1-2.4 4.6-2.1 5.6 0 .1.2.1.2.1.8-.2.9-2 3.4-2.1 6.8-.1 22.1 0 28.5.1 2.6.1 2.1 1.9 2.6 2.1z"></path>
+                        <path class="bottomshadow" d="M39.4,8.9C39,8.5,38.5,8.3,38,8.2L7.1,8.3C6.5,8.3,6,8.5,5.6,9C5.2,9.4,5,9.9,5,10.5 c0,0.6-0.2,3.6,1.7,5.6l12.7,12.8c1,0.7,2,1,3.1,1c1.1,0,2.7-0.6,3.8-1.5L38.4,16c1.9-2.1,1.6-5.1,1.6-5.7 C40.1,9.8,39.9,9.3,39.4,8.9z"></path>
+                        <path class="caret" d="M38.3 8.8c-.4-.4-.9-.6-1.4-.7H8.1c-.6 0-1.1.2-1.5.7-.4.4-.6.9-.6 1.5s.2 1 .6 1.5L21 26.2c.4.4.9.6 1.5.6s1-.2 1.5-.6l14.3-14.5c.4-.4.6-.9.6-1.5.1-.5-.1-1-.6-1.4z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <script type="text/javascript">
+                    window.addEvent('domready', function() {
+                      Travian.Translation.add({
+                        'infobox_collapsed': "View more messages",
+                        'infobox_expanded': "Hide messages"
+                      });
+                      var box = $('sidebarBoxInfobox');
+                      box.down('button.toggle').addEvent('click', function(e) {
+                        Travian.Game.Layout.toggleBox(box, 'travian_toggle', 'infobox');
+                      });
+                    });
+                    jQuery(function() {
+                      Travian.Game.Layout.setInfoboxItemsRead();
+                      Travian.Game.Layout.setupInfoboxItemsDeletionWithMessage("Do you want to permanently delete this message? ',' Confirm");
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div id="sidebarBoxLinklist" class="sidebarBox   ">
+              <div class="sidebarBoxBaseBox">
+                <div class="baseBox baseBoxTop">
+                  <div class="baseBox baseBoxBottom">
+                    <div class="baseBox baseBoxCenter"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebarBoxInnerBox">
+                <div class="innerBox header ">
+                  <div class="buttonsWrapper">
+                    <button type="button" id="buttonSbCOS5JTM2euX" title="Link List || Edit Link List" class="layoutButton editWhite green " onclick="return false;">
+                      <div class="button-container addHoverClick">
+                        <i></i>
+                      </div>
+                    </button>
+                    <script type="text/javascript">
+                      if ($('buttonSbCOS5JTM2euX')) {
+                        $('buttonSbCOS5JTM2euX').addEvent('click', function() {
+                          window.fireEvent('buttonClicked', [this, {
+                            "type": "green",
+                            "onclick": "return false;",
+                            "loadTitle": false,
+                            "boxId": "",
+                            "disabled": false,
+                            "speechBubble": "",
+                            "class": "",
+                            "id": "buttonSbCOS5JTM2euX",
+                            "redirectUrl": "spieler.php?s=2",
+                            "redirectUrlExternal": "",
+                            "title": "Link List || Edit Link List"
+                          }]);
+                        });
+                      }
+                    </script>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="boxTitle">Link list</div>
+                </div>
+                <div class="innerBox content">
+                  <div class="linklistNotice">
+                    <ul>
+                      <li class="">
+                        <a title="Information about Server" href="statistiken.php?id=0"> &#9658; Information about Server</a>
+                      </li>
+                      <li class="">
+                        <a title="Farmlist System" href="build.php?id=39&t=99"> &#9658; Farmlist System</a>
+                      </li>
+                    </ul>
+                    <div id="linkList" class="listing">
+                      <div class="list none">
+                        <ul>
+                          <li class="entry">
+                            <a href="https://ts1.waroftribe.com/build.php?id=35" title="Great Barracks">Great Barracks</a>
+                          </li>
+                        </ul>
+                        <div class="pager">
+                          <a href="#" class="back" style="display: none; "></a>
+                          <a href="#" class="next" style="display: none; "></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="innerBox footer"></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div id="contentOuterContainer" class="size1">
+            <span id="warehouse" style="display: none;">80000000</span>
+            <span id="granary" style="display: none;">80000000</span>
+            <ul id="stockBar">
+              <li id="stockBarWarehouseWrapper" class="stock" title="Warehouse">
+                <i class="warehouse"></i>
+                <span class="value" id="stockBarWarehouse" style="font-size:9px;">80000000</span>
+              </li>
+              <li id="stockBarResource1" class="stockBarButton" title="Lumber||Production: 140,000
+																											<br />Full in: 519:41:35
+																											<br />Click here for more information">
+                <div class="begin"></div>
+                <div class="middle">
+                  <i class="r1"></i>
+                  <img src="https://ts1.waroftribe.com/img/x.gif" class="productionBoost">
+                  <span id="l1" class="value">7223365</span>
+                  <div class="barBox">
+                    <div id="lbar1" class="bar" style="width:9%;"></div>
+                  </div>
+                  <a href="production.php?t=1" title="Lumber||Production: 140,000
+																														<br />Full in: 519:41:35
+																														<br />Click here for more information">
+                    <img src="https://ts1.waroftribe.com/img/x.gif" alt="Lumber||Production: 140,000
+																															<br />Full in: 519:41:35
+																															<br />Click here for more information" />
+                  </a>
+                </div>
+                <div class="end"></div>
+              </li>
+              <li id="stockBarResource2" class="stockBarButton" title="Clay||Production: 140,000
+																													<br />Full in: 537:26:59
+																													<br />Click here for more information">
+                <div class="begin"></div>
+                <div class="middle">
+                  <i class="r2"></i>
+                  <img src="https://ts1.waroftribe.com/img/x.gif" class="productionBoost">
+                  <span id="l2" class="value">4736489</span>
+                  <div class="barBox">
+                    <div id="lbar2" class="bar" style="width:6%;"></div>
+                  </div>
+                  <a href="production.php?t=2" title="Clay||Production: 140,000
+																																<br />Full in: 537:26:59
+																																<br />Click here for more information">
+                    <img src="https://ts1.waroftribe.com/img/x.gif" alt="Clay||Production: 140,000
+																																	<br />Full in: 537:26:59
+																																	<br />Click here for more information" />
+                  </a>
+                </div>
+                <div class="end"></div>
+              </li>
+              <li id="stockBarResource3" class="stockBarButton" title="Iron||Production: 140,000
+																															<br />Full in: 531:01:02
+																															<br />Click here for more information">
+                <div class="begin"></div>
+                <div class="middle">
+                  <i class="r3"></i>
+                  <img src="https://ts1.waroftribe.com/img/x.gif" class="productionBoost">
+                  <span id="l3" class="value">5637049</span>
+                  <div class="barBox">
+                    <div id="lbar3" class="bar" style="width:7%;"></div>
+                  </div>
+                  <a href="production.php?t=3" title="Iron||Production: 140,000
+																																		<br />Full in: 531:01:02
+																																		<br />Click here for more information">
+                    <img src="https://ts1.waroftribe.com/img/x.gif" alt="Iron||Production: 140,000
+																																			<br />Full in: 531:01:02
+																																			<br />Click here for more information" />
+                  </a>
+                </div>
+                <div class="end"></div>
+              </li>
+              <li id="stockBarGranaryWrapper" class="stock" title="Granary ">
+                <i class="granary"></i>
+                <span class="value" id="stockBarGranary" style="font-size:9px;">80000000</span>
+              </li>
+              <li id="stockBarResource4" class="stockBarButton" title="Crop||Production: -18,195,763
+																																	<br />Empty in: 03:03:01
+																																	<br />Click here for more information">
+                <div class="begin"></div>
+                <div class="middle">
+                  <i class="r4"></i>
+                  <img src="https://ts1.waroftribe.com/img/x.gif" class="productionBoost">
+                  <span id="l4" class="value" style="font-size:9px;color:red;">55505049</span>
+                  <div class="barBox">
+                    <div id="lbar4" class="bar" style="width:69%;"></div>
+                  </div>
+                  <a href="production.php?t=4" title="Crop||Production: -18,195,763
+																																				<br />Empty in: 03:03:01
+																																				<br />Click here for more information">
+                    <img src="https://ts1.waroftribe.com/img/x.gif" alt="Crop||Production: -18,195,763
+																																					<br />Empty in: 03:03:01
+																																					<br />Click here for more information" />
+                  </a>
+                </div>
+                <div class="end"></div>
+              </li>
+              <li id="stockBarFreeCropWrapper" class="stockBarButton r5">
+                <div class="begin"></div>
+                <div class="middle">
+                  <i class="r5"></i>
+                  <span id="stockBarFreeCrop" class="value" style="font-size: 8px;">-18,195,763</span>
+                  <a href="production.php?t=5" title="Free crop || Crop reserve: -18,195,763
+																																					<br />Click here for more information">
+                    <img src="https://ts1.waroftribe.com/img/x.gif" alt="">
+                  </a>
+                </div>
+                <div class="end"></div>
+              </li>
+            </ul>
+            <script type="text/javascript">
+              var resources = new Object();
+              resources.production = {
+                "l1": 140000,
+                "l2": 140000,
+                "l3": 140000,
+                "l4": -18195763,
+                "l5": 210000
+              };
+              resources.storage = {
+                "l1": 7223365,
+                "l2": 4736489,
+                "l3": 5637049,
+                "l4": 55505049
+              };
+              resources.maxStorage = {
+                "l1": 80000000,
+                "l2": 80000000,
+                "l3": 80000000,
+                "l4": 80000000
+              };
+              $$('li.stockBarButton').each(function(element) {
+                Travian.addMouseEvents(element, element);
+              });
+              var stockBarWarehouse = $('stockBarWarehouse');
+              var stockBarGranary = $('stockBarGranary');
+              var stockBarFreeCrop = $('stockBarFreeCrop');
+              var numberFormatter = new Travian.Formatter({
+                forceDecimal: false
+              });
+              stockBarWarehouse.set('html', numberFormatter.getFormattedNumber(parseInt(stockBarWarehouse.get('html'))));
+              stockBarGranary.set('html', numberFormatter.getFormattedNumber(parseInt(stockBarGranary.get('html'))));
+            </script>
+            <div class="contentTitle"> &nbsp;</div>
+            <div class="contentContainer">
+              <div id="content" class="village1">
+                <map name="rx" id="rx">
+                  <area href="build.php?id=1" coords="137,88,28" shape="circle" title="
+																																						<div style='color:#FFF'>&lt;b&gt;Woodcutter&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=2" coords="227,89,28" shape="circle" title="
+																																							<div style='color:#FFF'>&lt;b&gt;Cropland&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=3" coords="295,101,28" shape="circle" title="
+																																								<div style='color:#FFF'>&lt;b&gt;Woodcutter&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=4" coords="79,127,28" shape="circle" title="
+																																									<div style='color:#FFF'>&lt;b&gt;Iron Mine&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=5" coords="192,140,28" shape="circle" title="
+																																										<div style='color:#FFF'>&lt;b&gt;Clay Pit&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=6" coords="249,147,28" shape="circle" title="
+																																											<div style='color:#FFF'>&lt;b&gt;Clay Pit&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=7" coords="334,145,28" shape="circle" title="
+																																												<div style='color:#FFF'>&lt;b&gt;Iron Mine&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=8" coords="19,178,28" shape="circle" title="
+																																													<div style='color:#FFF'>&lt;b&gt;Cropland&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=9" coords="100,179,28" shape="circle" title="
+																																														<div style='color:#FFF'>&lt;b&gt;Cropland&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=10" coords="290,179,28" shape="circle" title="
+																																															<div style='color:#FFF'>&lt;b&gt;Iron Mine&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=11" coords="377,179,28" shape="circle" title="
+																																																<div style='color:#FFF'>&lt;b&gt;Iron Mine&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=12" coords="27,239,28" shape="circle" title="
+																																																	<div style='color:#FFF'>&lt;b&gt;Cropland&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=13" coords="100,229,28" shape="circle" title="
+																																																		<div style='color:#FFF'>&lt;b&gt;Cropland&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=14" coords="236,265,28" shape="circle" title="
+																																																			<div style='color:#FFF'>&lt;b&gt;Woodcutter&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=15" coords="358,234,28" shape="circle" title="
+																																																				<div style='color:#FFF'>&lt;b&gt;Cropland&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=16" coords="131,319,28" shape="circle" title="
+																																																					<div style='color:#FFF'>&lt;b&gt;Clay Pit&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=17" coords="222,324,28" shape="circle" title="
+																																																						<div style='color:#FFF'>&lt;b&gt;Woodcutter&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="build.php?id=18" coords="312,301,28" shape="circle" title="
+																																																							<div style='color:#FFF'>&lt;b&gt;Clay Pit&lt;/b&gt;&amp;nbsp;&lt;span class=\&quot;level\&quot;&gt;Level 10&lt;/span&gt;||&lt;span class=&quot;notice&quot;&gt;The building has reached the max level&lt;/span&gt;</div>" />
+                  <area href="dorf2.php" coords="197,191,32" shape="circle" title="Village center">
+                </map>
+                <img id="resfeld" usemap="#rx" src="https://ts1.waroftribe.com/img/x.gif" alt="">
+                <div id="village_map" class="f3">
+                  <div class="level colorLayer maxLevel gid1 level10" style="left:179px;top:78px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid4 level10" style="left:268px;top:79px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid1 level10" style="left:337px;top:91px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid3 level10" style="left:121px;top:117px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid2 level10" style="left:234px;top:130px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid2 level10" style="left:291px;top:137px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid3 level10" style="left:376px;top:135px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid4 level10" style="left:61px;top:168px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid4 level10" style="left:142px;top:169px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid3 level10" style="left:332px;top:169px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid3 level10" style="left:419px;top:169px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid4 level10" style="left:69px;top:229px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid4 level10" style="left:142px;top:219px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid1 level10" style="left:278px;top:255px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid4 level10" style="left:400px;top:224px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid2 level10" style="left:173px;top:309px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid1 level10" style="left:264px;top:314px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                  <div class="level colorLayer maxLevel gid2 level10" style="left:354px;top:291px;">
+                    <div class="labelLayer">10</div>
+                  </div>
+                </div>
+                <div id="map_details">
+                  <div class="movements">
+                    <div class="movements ">
+                      <div class="boxes villageList movements">
+                        <div class="boxes-tl"></div>
+                        <div class="boxes-tr"></div>
+                        <div class="boxes-tc"></div>
+                        <div class="boxes-ml"></div>
+                        <div class="boxes-mr"></div>
+                        <div class="boxes-mc"></div>
+                        <div class="boxes-bl"></div>
+                        <div class="boxes-br"></div>
+                        <div class="boxes-bc"></div>
+                        <div class="boxes-contents cf">
+                          <table id="movements" cellpadding="1" cellspacing="1">
+                            <thead>
+                              <tr>
+                                <th colspan="3">Troop Movements:</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="typ">
+                                  <a href="build.php?t=1&id=39">
+                                    <img src="https://ts1.waroftribe.com/img/x.gif" class="att1" alt="Own attacking troops" title="Own attacking troops" />
+                                  </a>
+                                  <span class="a1">&raquo;</span>
+                                </td>
+                                <td>
+                                  <div class="mov">
+                                    <span class="a1">1&nbsp;Attack</span>
+                                  </div>
+                                  <div class="dur_r">in a &nbsp; <span class="timer" counting="down" value="313">00:05:13</span>&nbsp;hours </div>
+                        </div>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="boxes villageList production">
+                  <div class="boxes-tl"></div>
+                  <div class="boxes-tr"></div>
+                  <div class="boxes-tc"></div>
+                  <div class="boxes-ml"></div>
+                  <div class="boxes-mr"></div>
+                  <div class="boxes-mc"></div>
+                  <div class="boxes-bl"></div>
+                  <div class="boxes-br"></div>
+                  <div class="boxes-bc"></div>
+                  <div class="boxes-contents cf">
+                    <table id="production" cellpadding="1" cellspacing="1">
+                      <thead>
+                        <tr>
+                          <th colspan="4">Production:</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="ico">
+                            <div>
+                              <img src="https://ts1.waroftribe.com/img/x.gif" class="productionBoost">
+                              <i class="r1"></i>
+                            </div>
+                          </td>
+                          <td class="res">Lumber:</td>
+                          <td class="num">140,000</td>
+                        </tr>
+                        <tr>
+                          <td class="ico">
+                            <div>
+                              <img src="https://ts1.waroftribe.com/img/x.gif" class="productionBoost">
+                              <i class="r2"></i>
+                            </div>
+                          </td>
+                          <td class="res">Clay:</td>
+                          <td class="num">140,000</td>
+                        </tr>
+                        <tr>
+                          <td class="ico">
+                            <div>
+                              <img src="https://ts1.waroftribe.com/img/x.gif" class="productionBoost">
+                              <i class="r3"></i>
+                            </div>
+                          </td>
+                          <td class="res">Iron:</td>
+                          <td class="num">140,000</td>
+                        </tr>
+                        <tr>
+                          <td class="ico">
+                            <div>
+                              <img src="https://ts1.waroftribe.com/img/x.gif" class="productionBoost">
+                              <i class="r4"></i>
+                            </div>
+                          </td>
+                          <td class="res">Crop:</td>
+                          <td class="num">-18,195,763‏</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button type="button" class="gold productionBoostButton" id="buttonP2gQFPKZoe3Fm">
+                      <div class="button-container addHoverClick">
+                        <div class="button-background">
+                          <div class="buttonStart">
+                            <div class="buttonEnd">
+                              <div class="buttonMiddle"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="button-content">+25%</div>
+                      </div>
+                    </button>
+                    <script type="text/javascript" id="buttonP2gQFPKZoe3Fm_script">
+                      window.addEvent('domready', function() {
+                        if ($('buttonP2gQFPKZoe3Fm')) {
+                          $('buttonP2gQFPKZoe3Fm').addEvent('click', function() {
+                            window.fireEvent('buttonClicked', [this, {
+                              "name": "",
+                              "onclick": "",
+                              "confirm": "",
+                              "productionBoostDialog": {
+                                "infoIcon": "http:\/\/t4.answers.travian.ir\/index.php?aid=0#go2answer"
+                              },
+                              "title": "More information on increasing production",
+                              "id": "buttonP2gQFPKZoe3Fm"
+                            }]);
+                          });
+                        }
+                      });
+                    </script>
+                  </div>
+                </div>
+                <div class="boxes villageList units">
+                  <div class="boxes-tl"></div>
+                  <div class="boxes-tr"></div>
+                  <div class="boxes-tc"></div>
+                  <div class="boxes-ml"></div>
+                  <div class="boxes-mr"></div>
+                  <div class="boxes-mc"></div>
+                  <div class="boxes-bl"></div>
+                  <div class="boxes-br"></div>
+                  <div class="boxes-bc"></div>
+                  <div class="boxes-contents cf">
+                    <table id="troops" cellpadding="1" cellspacing="1">
+                      <thead>
+                        <tr>
+                          <th colspan="3"> Troops: </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit uhero' src='https://ts1.waroftribe.com/img/x.gif' alt='Hero' title='Hero' />
+                            </a>
+                          </td>
+                          <td class='num'>3</td>
+                          <td class='un'>Hero</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u1' src='https://ts1.waroftribe.com/img/x.gif' alt='Legionnaire' title='Legionnaire' />
+                            </a>
+                          </td>
+                          <td class='num'>1,029,262</td>
+                          <td class='un'>Legionnaire</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u2' src='https://ts1.waroftribe.com/img/x.gif' alt='Praetorian' title='Praetorian' />
+                            </a>
+                          </td>
+                          <td class='num'>7,058,282</td>
+                          <td class='un'>Praetorian</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u21' src='https://ts1.waroftribe.com/img/x.gif' alt='Phalanx' title='Phalanx' />
+                            </a>
+                          </td>
+                          <td class='num'>16,200,063</td>
+                          <td class='un'>Phalanx</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u23' src='https://ts1.waroftribe.com/img/x.gif' alt='Pathfinder' title='Pathfinder' />
+                            </a>
+                          </td>
+                          <td class='num'>160,237</td>
+                          <td class='un'>Pathfinder</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u25' src='https://ts1.waroftribe.com/img/x.gif' alt='Druidrider' title='Druidrider' />
+                            </a>
+                          </td>
+                          <td class='num'>6,100,812</td>
+                          <td class='un'>Druidrider</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u99' src='https://ts1.waroftribe.com/img/x.gif' alt='Traps' title='Traps' />
+                            </a>
+                          </td>
+                          <td class='num'>120,000</td>
+                          <td class='un'>Traps</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u35' src='https://ts1.waroftribe.com/img/x.gif' alt='Wild Boar' title='Wild Boar' />
+                            </a>
+                          </td>
+                          <td class='num'>84,577</td>
+                          <td class='un'>Wild Boar</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u36' src='https://ts1.waroftribe.com/img/x.gif' alt='Wolf' title='Wolf' />
+                            </a>
+                          </td>
+                          <td class='num'>44,174</td>
+                          <td class='un'>Wolf</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u37' src='https://ts1.waroftribe.com/img/x.gif' alt='Bear' title='Bear' />
+                            </a>
+                          </td>
+                          <td class='num'>44,349</td>
+                          <td class='un'>Bear</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u38' src='https://ts1.waroftribe.com/img/x.gif' alt='Crocodile' title='Crocodile' />
+                            </a>
+                          </td>
+                          <td class='num'>36,591</td>
+                          <td class='un'>Crocodile</td>
+                        </tr>
+                        <tr>
+                          <td class='ico'>
+                            <a href='build.php?id=39&t=1'>
+                              <img class='unit u40' src='https://ts1.waroftribe.com/img/x.gif' alt='Elephant' title='Elephant' />
+                            </a>
+                          </td>
+                          <td class='num'>15,438</td>
+                          <td class='un'>Elephant</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="right-menu-btn" onclick="rightReveal()" class="dropbtn">
+            <div id="menu-two">
+              <div id="bar"></div>
+              <div id="bar"></div>
+              <div id="bar"></div>
+            </div>
+        </div>
+        <div id="sidebarAfterContent" class="sidebar afterContent">
+          <div id="sidebarBoxActiveVillage" class="sidebarBox   ">
+            <div class="sidebarBoxBaseBox">
+              <div class="baseBox baseBoxTop">
+                <div class="baseBox baseBoxBottom">
+                  <div class="baseBox baseBoxCenter"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebarBoxInnerBox">
+              <div class="innerBox header ">
+                <div class="buttonsWrapper">
+                  <button type="button" id="button5229e5254faf9" class="layoutButton workshopWhite green disabled" onclick="return false;" title="There is no workshop in this village.
+																																																														<br />
+																																																														<span class=&quot;warning&quot;> Build workshop.</span>">
+                    <div class="button-container addHoverClick">
+                      <i></i>
+                    </div>
+                  </button>
+                  <button type="button" id="button5229e5254fc5c" class="layoutButton stableWhite green disabled" onclick="return false;" title="There is no stable in this village.
+																																																														<br />
+																																																														<span class=&quot;warning&quot;> Build stable.</span>">
+                    <div class="button-container addHoverClick">
+                      <i></i>
+                    </div>
+                  </button>
+                  <button type="button" id="button5229e5254fe6f" class="layoutButton barracksWhite green " onclick="return false;" title="Go to barracks || No training in progress">
+                    <div class="button-container addHoverClick">
+                      <i></i>
+                    </div>
+                  </button>
+                  <script type="text/javascript">
+                    if ($('button5229e5254fe6f')) {
+                      $('button5229e5254fe6f').addEvent('click', function() {
+                        window.fireEvent('buttonClicked', [this, {
+                          "type": "green",
+                          "onclick": "return false;",
+                          "loadTitle": true,
+                          "boxId": "activeVillage",
+                          "disabled": false,
+                          "speechBubble": "",
+                          "class": "",
+                          "id": "button5229e5254ffa5",
+                          "redirectUrl": "build.php?id=27",
+                          "redirectUrlExternal": ""
+                        }]);
+                      });
+                    }
+                  </script>
+                  <button type="button" id="button5229e5254ffa5" class="layoutButton marketWhite green " onclick="return false;" title="Go to marketplace || Merchants 20/20">
+                    <div class="button-container addHoverClick">
+                      <i></i>
+                    </div>
+                  </button>
+                  <script type="text/javascript">
+                    if ($('button5229e5254ffa5')) {
+                      $('button5229e5254ffa5').addEvent('click', function() {
+                        window.fireEvent('buttonClicked', [this, {
+                          "type": "green",
+                          "onclick": "return false;",
+                          "loadTitle": true,
+                          "boxId": "activeVillage",
+                          "disabled": false,
+                          "speechBubble": "",
+                          "class": "",
+                          "id": "button5229e5254ffa5",
+                          "redirectUrl": "build.php?id=19",
+                          "redirectUrlExternal": ""
+                        }]);
+                      });
+                    }
+                  </script>
+                </div>
+                <div class="clear"></div>
+                <div id="villageNameField" class="boxTitle">WW village</div>
+              </div>
+              <div class="innerBox content">
+                <div class='loyalty high'>Loyalty: <span>100 %</span>
+                </div>
+              </div>
+              <div class="innerBox footer">
+                <button type="button" id="button5229e5255021d" class="layoutButton editWhite green  " onclick="return false;" title="Change the village's name">
+                  <div class="button-container addHoverClick">
+                    <i></i>
+                  </div>
+                </button>
+                <script type="text/javascript">
+                  if ($('button5229e5255021d')) {
+                    $('button5229e5255021d').addEvent('click', function() {
+                      window.fireEvent('buttonClicked', [this, {
+                        "type": "green",
+                        "onclick": "return false;",
+                        "loadTitle": false,
+                        "boxId": "",
+                        "disabled": false,
+                        "speechBubble": "",
+                        "class": "",
+                        "id": "button5229e5255021d",
+                        "redirectUrl": "",
+                        "redirectUrlExternal": "",
+                        "title": "Click here twice to change the name of your village",
+                        "villageDialog": {
+                          "title": "Change the village's name:",
+                          "description": "New Village Name:",
+                          "saveText": "Save",
+                          "villageId": "13192"
+                        }
+                      }]);
+                    });
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+          <div id="sidebarBoxVillagelist" class="sidebarBox toggleable collapsed ">
+            <div class="sidebarBoxBaseBox">
+              <div class="baseBox baseBoxTop">
+                <div class="baseBox baseBoxBottom">
+                  <div class="baseBox baseBoxCenter"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebarBoxInnerBox">
+              <div class="innerBox header ">
+                <div class="buttonsWrapper">
+                  <button type="button" id="button5229e52550643" class="layoutButton toggleCoordsWhite green  toggle" onclick="return false;" title="Show coordinates">
+                    <div class="button-container addHoverClick">
+                      <i></i>
+                    </div>
+                  </button>
+                  <script type="text/javascript">
+                    if ($('button5229e52550643')) {
+                      $('button5229e52550643').addEvent('click', function() {
+                        window.fireEvent('buttonClicked', [this, {
+                          "type": "green",
+                          "onclick": "return false;",
+                          "loadTitle": false,
+                          "boxId": "",
+                          "disabled": false,
+                          "speechBubble": "",
+                          "class": "toggle",
+                          "id": "button5229e52550643",
+                          "redirectUrl": "",
+                          "redirectUrlExternal": ""
+                        }]);
+                      });
+                    }
+                  </script>
+                  <button type="button" id="button5229e52550762" class="layoutButton overviewWhite green  " onclick="return false;" title="Village statistics">
+                    <div class="button-container addHoverClick">
+                      <i></i>
+                    </div>
+                  </button>
+                  <script type="text/javascript">
+                    if ($('button5229e52550762')) {
+                      $('button5229e52550762').addEvent('click', function() {
+                        window.fireEvent('buttonClicked', [this, {
+                          "type": "green",
+                          "onclick": "return false;",
+                          "loadTitle": false,
+                          "boxId": "",
+                          "disabled": false,
+                          "speechBubble": "",
+                          "class": "",
+                          "id": "button5229e52550762",
+                          "redirectUrl": "dorf3.php",
+                          "redirectUrlExternal": ""
+                        }]);
+                      });
+                    }
+                  </script>
+                  <style type="text/css">
+                    button.layoutButton.buildOff div.button-container i {
+                      background-position: right -758px;
+                    }
+
+                    button.layoutButton.buildOn div.button-container i {
+                      background-position: right -800px;
+                    }
+                  </style>
+                  <button type="button" id="buttonBuild" class="layoutButton buildOff  green" title="Run the quick upgrade" onclick="return false;">
+                    <div class="button-container addHoverClick ">
+                      <i></i>
+                    </div>
+                  </button>
+                  <script type="text/javascript">
+                    if ($('buttonBuild')) {
+                      $('buttonBuild').addEvent('click', function() {
+                        window.fireEvent('buttonClicked', [this, {
+                          "type": "green",
+                          "onclick": "return false;",
+                          "loadTitle": false,
+                          "boxId": "",
+                          "disabled": false,
+                          "speechBubble": "",
+                          "class": "",
+                          "id": "buttonBuild",
+                          "redirectUrl": "dorf1.php?builder=On",
+                          "redirectUrlExternal": ""
+                        }]);
+                      });
+                    }
+                  </script>
+                </div>
+                <div class="clear"></div>
+                <div class="expansionSlotInfo" title="Villages :  15/20 ‏
+																																																													<br />Culture points generated to take control of another village:  4,387,064 / 524,000">
+                  <div class="boxTitleAdditional">15/20</div>
+                  <div class="boxTitle">Villages</div>
+                  <div class="villageListBarBox">
+                    <div class="bar" style="width:100%">&nbsp;</div>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  window.addEvent('domready', function() {
+                    Travian.Translation.add({
+                      'villagelist_collapsed': "Show coordinates",
+                      'villagelist_expanded': "Hide coordinates"
+                    });
+                    var box = $('sidebarBoxVillagelist');
+                    box.down('button.toggle').addEvent('click', function(e) {
+                      Travian.Game.Layout.toggleBox(box, 'travian_toggle', 'villagelist');
+                    });
+                  });
+                </script>
+              </div>
+              <div class="innerBox content">
+                <ul>
+                  <li class="  " title="00.HZH (16|26)">
+                    <a href="/dorf1.php?newdid=14991&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_00.HZH" class="name">00.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('00.HZH',16,26);">
+                        <span class="coordinateX">(16</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">26)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="01.HZH (17|32)">
+                    <a href="/dorf1.php?newdid=13786&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_01.HZH" class="name">01.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('01.HZH',17,32);">
+                        <span class="coordinateX">(17</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">32)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="02.HZH (11|28)">
+                    <a href="/dorf1.php?newdid=14584&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_02.HZH" class="name">02.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('02.HZH',11,28);">
+                        <span class="coordinateX">(11</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">28)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="03.HZH (12|20)">
+                    <a href="/dorf1.php?newdid=16193&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_03.HZH" class="name">03.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('03.HZH',12,20);">
+                        <span class="coordinateX">(12</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">20)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="04.HZH (16|33)">
+                    <a href="/dorf1.php?newdid=13584&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_04.HZH" class="name">04.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('04.HZH',16,33);">
+                        <span class="coordinateX">(16</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">33)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="05.HZH (27|26)">
+                    <a href="/dorf1.php?newdid=15002&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_05.HZH" class="name">05.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('05.HZH',27,26);">
+                        <span class="coordinateX">(27</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">26)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="06.HZH (14|42)">
+                    <a href="/dorf1.php?newdid=11773&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_06.HZH" class="name">06.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('06.HZH',14,42);">
+                        <span class="coordinateX">(14</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">42)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="07.HZH (21|35)">
+                    <a href="/dorf1.php?newdid=13187&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_07.HZH" class="name">07.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('07.HZH',21,35);">
+                        <span class="coordinateX">(21</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">35)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="08.HZH (27|34)">
+                    <a href="/dorf1.php?newdid=13394&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_08.HZH" class="name">08.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('08.HZH',27,34);">
+                        <span class="coordinateX">(27</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">34)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="09.HZH (22|32)">
+                    <a href="/dorf1.php?newdid=13791&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_09.HZH" class="name">09.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('09.HZH',22,32);">
+                        <span class="coordinateX">(22</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">32)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="10.HZH (26|39)">
+                    <a href="/dorf1.php?newdid=12388&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_10.HZH" class="name">10.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('10.HZH',26,39);">
+                        <span class="coordinateX">(26</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">39)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="11.HZH (31|39)">
+                    <a href="/dorf1.php?newdid=12393&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_11.HZH" class="name">11.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('11.HZH',31,39);">
+                        <span class="coordinateX">(31</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">39)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="12.HZH (26|30)">
+                    <a href="/dorf1.php?newdid=14197&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_12.HZH" class="name">12.HZH</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('12.HZH',26,30);">
+                        <span class="coordinateX">(26</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">30)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class="  " title="gen_map_tatar_village (13|33)">
+                    <a href="/dorf1.php?newdid=13581&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_gen_map_tatar_village" class="name">Tatar village</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <a href="javascript: set_coord_xy('gen_map_tatar_village',13,33);">
+                        <span class="coordinateX">(13</span>
+                        <span class="coordinatePipe">|</span>
+                        <span class="coordinateY">33)</span>
+                      </a>
+                    </span>
+                  </li>
+                  <li class=" active attack " title="WW village (26|35)">
+                    <a href="/dorf1.php?newdid=13192&" accesskey="b" class="active">
+                      <img src="https://ts1.waroftribe.com/img/x.gif" alt="" />
+                      <div id="vul_WW village" class="name">WW village</div>
+                    </a>
+                    <span class="coordinates coordinatesWrapper coordinatesAligned coordinatesltr">
+                      <span class="coordinateX">(26</span>
+                      <span class="coordinatePipe">|</span>
+                      <span class="coordinateY">35)</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="innerBox footer"></div>
+            </div>
+          </div>
+          <script type="text/javascript">
+            function set_coord_xy(name, coord_x, coord_y) {
+              if (document.forms[0].name !== undefined) {
+                document.forms[0].name.value = name;
+              }
+              if (document.forms[0].x !== undefined) {
+                document.forms[0].x.value = coord_x;
+              }
+              if (document.forms[0].y !== undefined) {
+                document.forms[0].y.value = coord_y;
+              }
+            }
+          </script>
+          <div id="sidebarBoxDailyquests" class="sidebarBox   ">
+            <div class="sidebarBoxBaseBox">
+              <div class="baseBox baseBoxTop">
+                <div class="baseBox baseBoxBottom">
+                  <div class="baseBox baseBoxCenter"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebarBoxInnerBox">
+              <div class="innerBox header ">
+                <div class="travianBirthdayRibbon">
+                  <div class="headline"> Daily Quests </div>
+                </div>
+                <div class="boxTitle">Daily prizes</div>
+              </div>
+              <div class="innerBox content">
+                <form>
+                  <div class="questAchievementContainer">
+                    <button onclick="return false;" questbuttonoverviewachievements="1" class="green questButtonOverviewAchievements" id="button545dec96b3573" value="Подробности" type="submit">
+                      <div class="button-container addHoverClick ">
+                        <div class="button-background">
+                          <div class="buttonStart">
+                            <div class="buttonEnd">
+                              <div class="buttonMiddle"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="button-content">Click for details</div>
+                      </div>
+                    </button>
+                    <script type="text/javascript">
+                      window.addEvent('domready', function() {
+                        if ($('button545dec96b3573')) {
+                          $('button545dec96b3573').addEvent('click', function() {
+                            window.fireEvent('buttonClicked', [this, {
+                              "type": "submit",
+                              "value": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438",
+                              "name": "",
+                              "id": "button545dec96b3573",
+                              "class": "green questButtonOverviewAchievements",
+                              "title": "",
+                              "confirm": "",
+                              "onclick": "",
+                              "questButtonOverviewAchievements": true,
+                              "onClick": "return false;"
+                            }]);
+                          });
+                        }
+                      });
+                    </script>
+                  </div>
+                </form>
+                <script type="text/javascript">
+                  window.addEvent('domready', function() {
+                    Travian.Game.Quest.addListData({
+                      "achievementquests": {
+                        "questsTotal": 10,
+                        "questsCompleted": 0,
+                        "name": "Achievement Quests",
+                        "quests": {
+                          "AchievementQuest_01": {
+                            "id": "AchievementQuest_01",
+                            "name": "achievementQuests.achQuest_01_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 1,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_01_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_02": {
+                            "id": "AchievementQuest_02",
+                            "name": "achievementQuests.achQuest_02_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 3,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 1,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 2,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_02_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_03": {
+                            "id": "AchievementQuest_03",
+                            "name": "achievementQuests.achQuest_03_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 3,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 1,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 2,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_03_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_04": {
+                            "id": "AchievementQuest_04",
+                            "name": "achievementQuests.achQuest_04_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 1,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_04_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_05": {
+                            "id": "AchievementQuest_05",
+                            "name": "achievementQuests.achQuest_05_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 3,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 1,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 2,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_05_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_06": {
+                            "id": "AchievementQuest_06",
+                            "name": "achievementQuests.achQuest_06_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 3,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 1,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 2,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_06_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_07": {
+                            "id": "AchievementQuest_07",
+                            "name": "achievementQuests.achQuest_07_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 3,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 1,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 2,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_07_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_08": {
+                            "id": "AchievementQuest_08",
+                            "name": "achievementQuests.achQuest_08_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 3,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 1,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 2,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_08_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_09": {
+                            "id": "AchievementQuest_09",
+                            "name": "achievementQuests.achQuest_09_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 3,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 1,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 2,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_09_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuest_10": {
+                            "id": "AchievementQuest_10",
+                            "name": "achievementQuests.achQuest_10_name",
+                            "category": "achievementquests",
+                            "stepType": "achievementtask",
+                            "currentStep": "0",
+                            "stepCount": 3,
+                            "steps": [{
+                              "stepId": 0,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 1,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }, {
+                              "stepId": 2,
+                              "type": "achievementtask",
+                              "stepDescription": null
+                            }],
+                            "answersLink": "http:\\\/\\\/t4.answers.travian.com\\\/index.php?aid=%%achievementQuests.achQuest_10_answer (en)%%#go2answer"
+                          }
+                        }
+                      },
+                      "achievementrewards": {
+                        "questsTotal": 4,
+                        "questsCompleted": 0,
+                        "name": "Achievement Rewards",
+                        "quests": {
+                          "AchievementQuestReward_01": {
+                            "id": "AchievementQuestReward_01",
+                            "name": "achievementQuests.achQuestReward_01_name",
+                            "category": "achievementrewards",
+                            "stepType": "reward",
+                            "currentStep": 0,
+                            "stepCount": 1,
+                            "steps": {
+                              "stepId": 0,
+                              "type": "reward"
+                            },
+                            "answersLink": "http:\/\/t4.answers.travian.com\/index.php?aid=%%achievementQuests.achQuestReward_01_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuestReward_02": {
+                            "id": "AchievementQuestReward_02",
+                            "name": "achievementQuests.achQuestReward_02_name",
+                            "category": "achievementrewards",
+                            "stepType": "reward",
+                            "currentStep": 0,
+                            "stepCount": 1,
+                            "steps": {
+                              "stepId": 0,
+                              "type": "reward"
+                            },
+                            "answersLink": "http:\/\/t4.answers.travian.com\/index.php?aid=%%achievementQuests.achQuestReward_02_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuestReward_03": {
+                            "id": "AchievementQuestReward_03",
+                            "name": "achievementQuests.achQuestReward_03_name",
+                            "category": "achievementrewards",
+                            "stepType": "reward",
+                            "currentStep": 0,
+                            "stepCount": 1,
+                            "steps": {
+                              "stepId": 0,
+                              "type": "reward"
+                            },
+                            "answersLink": "http:\/\/t4.answers.travian.com\/index.php?aid=%%achievementQuests.achQuestReward_03_answer (en)%%#go2answer"
+                          },
+                          "AchievementQuestReward_04": {
+                            "id": "AchievementQuestReward_04",
+                            "name": "achievementQuests.achQuestReward_04_name",
+                            "category": "achievementrewards",
+                            "stepType": "reward",
+                            "currentStep": 0,
+                            "stepCount": 1,
+                            "steps": {
+                              "stepId": 0,
+                              "type": "reward"
+                            },
+                            "answersLink": "http:\/\/t4.answers.travian.com\/index.php?aid=%%achievementQuests.achQuestReward_04_answer (en)%%#go2answer"
+                          }
+                        }
+                      }
+                    });
+                  });
+                </script>
+              </div>
+              <div class="innerBox footer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+      <div id="footer">
+        <div id="pageLinks">Thanks <a href="https://www.travian.com/">"Travian Games GmbH"</a>for an Amazing Game. <div class="clear"></div>
+        </div>
+        <br>
+        <br />
+      </div>
+      <div id="servertime" class="stime"> Server time:&nbsp; <span class='timer' counting='up' value='1'>21:37:03</span>
+      </div>
+    </div>
+    </div>
+    <div id="ce"></div>
+    </div>
+    <script>
+        function navReveal() {
+        var x = document.getElementById("reveal");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+        function myFunction() {
+        var x = document.getElementById("sidebarBeforeContent");
+        var y = document.getElementById("contentOuterContainer");
+        if (x.style.display === "block" && y.style.display === "none" ) {
+          x.style.display = "none";
+          y.style.display = "block";
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+        }
+      }
+      function rightReveal() {
+        var x = document.getElementById("sidebarAfterContent");
+        var y = document.getElementById("contentOuterContainer");
+        if (x.style.display === "block" && y.style.display === "none" ) {
+          x.style.display = "none";
+          y.style.display = "block";
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+        }
+      }
+      // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+
+    </script>
+  </body>
+</html>

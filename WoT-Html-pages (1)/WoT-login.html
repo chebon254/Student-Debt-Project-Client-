@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>War Of Tribe x100 (Beta)</title>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="content-language" content="en" />
+    <link href="https://ts1.waroftribe.com/gpack/lang/en/compact.css" rel="stylesheet" type="text/css" />
+    <link href="https://ts1.waroftribe.com/gpack/lang/en/lang.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- == StyleSheet == -->
+    <!-- ========================================================== -->
+    <link rel="stylesheet" href="WoT-login.css" type="text/css">
+    <!-- ========================================================== -->
+
+
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/jquery.md5.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/d3/d3.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/d3/d3pie.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/gsap/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/default/gsap/minified/plugins/MorphSVGPlugin.min.js"></script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/js/Game/General/General.js"></script>
+    <script type="text/javascript">
+      var j$ = $.noConflict();
+    </script>
+    <script type="text/javascript">
+      window.TravianDefaults = {
+        Map: {
+          Size: {
+            width: 201,
+            height: 201,
+            left: -100,
+            right: 100,
+            bottom: -100,
+            top: 100
+          }
+        }
+      };
+
+      function getMapSize() {
+        return 100;
+      }
+
+      function getAutoReloadStatus() {
+        return 1;
+      }
+    </script>
+    <script type="text/javascript" src="https://ts1.waroftribe.com/crypt.js"></script>
+    <link rel="icon" href="https://ts1.waroftribe.com/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript">
+      Travian.Translation.add({
+        'allgemein.anleitung': "Instructions",
+        'allgemein.cancel': "Cancel",
+        'allgemein.ok': "Ok",
+        'allgemein.close': "Close",
+        'cropfinder.keine_ergebnisse': "There are no results"
+      });
+      Travian.applicationId = "T4.4 Game";
+      Travian.Game.version = "4.4";
+      Travian.Game.worldId = "WoT";
+      Travian.Game.speed = 100;
+      Travian.Templates = {};
+      Travian.Templates.ButtonTemplate = " < button > \n\ t < div class = \"button-container addHoverClick\">\n\t\t < div class = \"button-background\">\n\t\t\t < div class = \"buttonStart\">\n\t\t\t\t < div class = \"buttonEnd\">\n\t\t\t\t\t < div class = \"buttonMiddle\"><\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t < div class = \"button-content\"><\/div>\n\t<\/div>\n<\/button>\n";
+    </script>
+    <script type="text/javascript">
+      Travian.Game.eventJamHtml = '&lt;a href=&quot;http://t4.answers.travian.ir/index.php?aid=249#go2answer&quot; target=&quot;blank&quot; title=&quot;پاسخ&zwnj;های تراوین&quot;&gt;&lt;span class=&quot;c0 t&quot;&gt;0:00:0&lt;/span&gt;?&lt;/a&gt;'.unescapeHtml();
+      Travian.Game.eventJamHtml = '&lt;a href=&quot;javascript:void&quot; onclick=&quot;document.location.reload();&quot;&gt;&lt;img src=&quot;img/refresh.png&quot;&gt;&lt;/a&gt;'.unescapeHtml();
+    </script>
+    <script type="text/javascript">
+        window.ajaxToken = "765784eba4d5b4156277301c5674432faca910fc";
+        window._player_uuid = '';
+        Travian.Game.Preferences.initialize({
+          "highlightsToggle": "true",
+          "travian_toggle_hero": "expanded",
+          "travian_toggle_infobox": "expanded",
+          "travian_toggle_villagelist": "collapsed",
+          "travian_toggle_alliance": "expanded",
+          "WMBlueprints": "[]",
+          "QuestDialogPosition": "{\"position\":null,\"preferenceKey\":\"QuestDialogPosition\"}"
+        });
+        Travian.Game.Quest.init();
+      </script>
+  </head>
+  <body class="v35 webkit  en login perspectiveBuildings ltr season- buildingsV3">
+    <div id="background">
+      <div id="bodyWrapper">
+        <img style="filter:chroma();" src="https://ts1.waroftribe.com/img/x.gif" id="msfilter" alt="" />
+        <div id="header">
+          <div id="mtop">
+              <div id="left-menu-btn" onclick="myFunction()">
+                  <div id="menu">
+                    <div id="bar"></div>
+                    <div id="bar"></div>
+                    <div id="bar"></div>
+                  </div>
+              </div>
+            <a id="logo" href="http://ts1.waroftribe.com/" target="_blank" title="War Of Tribe x100 (Beta)"></a>
+            <a id="logo-img"><img src="trevians.png"  alt="" srcset=""></a>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div id="center">
+          <div id="sidebarBeforeContent" class="sidebar beforeContent">
+            <div id="sidebarBoxMenu" class="sidebarBox   ">
+              <div class="sidebarBoxBaseBox">
+                <div class="baseBox baseBoxTop">
+                  <div class="baseBox baseBoxBottom">
+                    <div class="baseBox baseBoxCenter"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebarBoxInnerBox">
+                <div class="innerBox header noHeader"></div>
+                <div class="innerBox content">
+                  <ul>
+                    <li class="first">
+                      <a href="http://ts1.waroftribe.com/" target="_blank">Homepage</a>
+                    </li>
+                    <li class="active">
+                      <a href="login.php">Login</a>
+                    </li>
+                    <li>
+                      <a href="register.php">Register</a>
+                    </li>
+                    <li>
+                      <a href="https://discord.gg/MwFF2Z8Tbd">Discord</a>
+                    </li>
+                    <li>
+                      <a href="support.php">Support</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="innerBox footer"></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div id="contentOuterContainer" class="size1">
+            <div class="contentTitle">&nbsp;</div>
+            <div class="contentContainer">
+              <div id="content" class="login">
+                <h1 class="titleInHeader">Login</h1>
+                <script type="text/javascript">
+                  Element.implement({
+                    //imgid: falls zu dem link ein pfeil gehört kann dieser "auf/zugeklappt" werden
+                    showOrHide: function(imgid) {
+                      //einblenden
+                      if (this.getStyle('display') == 'none') {
+                        if (imgid != '') {
+                          $(imgid).className = 'open';
+                        }
+                        //ausblenden
+                      } else if (imgid != '') {
+                        $(imgid).className = 'close';
+                      }
+                      this.toggleClass('hide');
+                    }
+                  });
+                </script>
+                <script type="text/javascript">
+                  Element.implement({
+                    //imgid: falls zu dem link ein pfeil gehört kann dieser "auf/zugeklappt" werden
+                    showOrHide: function(imgid) {
+                      //einblenden
+                      if (this.getStyle('display') == 'none') {
+                        if (imgid != '') {
+                          $(imgid).className = 'open';
+                        }
+                        //ausblenden
+                      } else if (imgid != '') {
+                        $(imgid).className = 'close';
+                      }
+                      this.toggleClass('hide');
+                    }
+                  });
+                </script>
+                <div class="worldStartInfo hide" id="worldStartInfo"> Server will start in <script language="JavaScript">
+                    dthen = 1620169200;
+                    var dnow = 1630982419;
+                    CountActive = true;
+                    CountStepper = -1;
+                    LeadingZero = true;
+                    DisplayFormat = "%%D%% days + %%H%%:%%M%%:%%S%% hours";
+                    DisplayFormatOnlyHours = "%%H%%:%%M%%:%%S%% hours";
+                    FinishMessage = "-10813219";
+
+                    function calcage(secs, num1, num2) {
+                      s = ((Math.floor(secs / num1)) % num2).toString();
+                      if (LeadingZero && s.length < 2) {
+                        s = "0" + s;
+                      }
+                      return "" + s + "";
+                    }
+
+                    function CountBack(secs) {
+                      if (secs < 0) {
+                        document.getElementById("worldStartInfo").innerHTML = " < a href = 'login.php' > "+FinishMessage+'</a>'; 
+                        return;
+                      }
+                      strDays = calcage(secs, 86400, 100000);
+                      console.log(strDays);
+                      if (strDays != "00") {
+                        DisplayStr = DisplayFormat.replace(/%%D%%/g, strDays);
+                      } else {
+                        DisplayStr = DisplayFormatOnlyHours;
+                      }
+                      DisplayStr = DisplayStr.replace(/%%H%%/g, calcage(secs, 3600, 24));
+                      DisplayStr = DisplayStr.replace(/%%M%%/g, calcage(secs, 60, 60));
+                      DisplayStr = DisplayStr.replace(/%%S%%/g, calcage(secs, 1, 60));
+                      document.getElementById("gameStartInfo").innerHTML = DisplayStr;
+                      if (CountActive) setTimeout("CountBack(" + (secs + CountStepper) + ")", SetTimeOutPeriod);
+                    }
+
+                    function putspan(backcolor, forecolor) {
+                      document.write(" < div class = 'countdownContent'
+                          id = 'gameStartInfo' > < /div>");}
+                          if (typeof(BackColor) == "undefined") BackColor = "white";
+                          if (typeof(ForeColor) == "undefined") ForeColor = "black"; CountStepper = Math.ceil(CountStepper);
+                          if (CountStepper == 0) CountActive = false;
+                          var SetTimeOutPeriod = (Math.abs(CountStepper) - 1) * 1000 + 990; putspan(BackColor, ForeColor);
+                          var dnow = 1630982419;
+                          if (CountStepper > 0) ddiff = new Date(dnow - dthen);
+                          else ddiff = new Date(dthen - dnow); gsecs = Math.floor(ddiff); CountBack(gsecs);
+                  </script>
+                </div>
+                <div class="outerLoginBox">
+                  <h2>Welcome to server War Of Tribe x100 (Beta) </h2>
+                  <noscript>
+                    <div class="noJavaScript">Login doesn't support javascript</div>
+                  </noscript>
+                  <div class="innerLoginBox">
+                    <form method="post" name="snd" action="login.php" class="">
+                      <input type="hidden" name="ft" value="a4" />
+                      <table class="transparent loginTable">
+                        <tbody>
+                          <tr class="account">
+                            <td class="accountNameOrEmailAddress">Account name or <br />e-mail address: </td>
+                            <td>
+                              <input class="text" type="text" name="user" maxlength="35" autocomplete='off' />
+                              <span class="error">
+                                <br />
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="pass">
+                            <td> Password:</td>
+                            <td>
+                              <input class="text" type="password" name="pw" maxlength="20" autocomplete='off' />
+                              <span class="error">
+                                <br>
+                                <br />
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="lowResOption">
+                            <td>Version for player </td>
+                            <td colspan="2">
+                              <input type="checkbox" class="checkbox" id="lowRes" name="lowRes" value="">
+                              <label for="lowRes">with low bandwidth (internet connection speed)</label>
+                            </td>
+                          </tr>
+                          <tr class="lowResInfo">
+                            <td colspan="3">(Note: this version of the map doesn't have all the options enabled)</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <button type="submit" value="Login" name="btnLogin" id="btnLogin" class="green " onclick="document.login.w.value=screen.width+':'+screen.height;">
+                                <div class="button-container addHoverClick ">
+                                  <div class="button-background">
+                                    <div class="buttonStart">
+                                      <div class="buttonEnd">
+                                        <div class="buttonMiddle"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="button-content">Login</div>
+                                </div>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </form>
+                  </div>
+                </div>
+                <div class="clear"></div>
+                <div class="greenbox passwordForgotten">
+                  <div class="greenbox-top"></div>
+                  <div class="greenbox-content">
+                    <div class="passwordForgottenLink">
+                      <a onClick="$('showPasswordForgotten').showOrHide('arrow');" href="?action=forgotPassword" class="showPWForgottenLink">
+                        <img class="close" id="arrow" src="https://ts1.waroftribe.com/img/x.gif">Password Forgotten? </a>
+                    </div>
+                    <div class="showPasswordForgotten hide" id="showPasswordForgotten">
+                      <form method="post" name="login">
+                        <input type="hidden" name="w" value="">
+                        <input type="hidden" name="forgotPassword" value="1">
+                        <div class="forgotPasswordDescription">We will send you a new password. It will be activated as soon as you confirm receipt</div>
+                        <table class="transparent pwForgottenTable" id="pw_forgotten_form" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr class="mail">
+                              <th>Email</th>
+                              <td>
+                                <input class="text" type="text" name="pw_email" value="">
+                                <br>
+                                <div class="error ltr"></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td colspan="2">
+                                <button type="submit" value="Request password" name="btnRequestPassword" id="btnRequestPassword" class="green " onclick="document.login.w.value=screen.width+':'+screen.height;">
+                                  <div class="button-container addHoverClick ">
+                                    <div class="button-background">
+                                      <div class="buttonStart">
+                                        <div class="buttonEnd">
+                                          <div class="buttonMiddle"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="button-content">Request password</div>
+                                  </div>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="greenbox-bottom"></div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class="clear">&nbsp;</div>
+            </div>
+            <div class="clear"></div>
+            <div class="contentFooter">&nbsp;</div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div id="footer">
+        <div id="pageLinks">Thanks <a href="https://www.travian.com/">"Travian Games GmbH"</a>for an Amazing Game. <div class="clear"></div>
+        </div>
+        <br>
+        <br />
+      </div>
+    </div>
+    <div id="ce"></div>
+
+    <script >
+      function myFunction() {
+        var x = document.getElementById("sidebarBeforeContent");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

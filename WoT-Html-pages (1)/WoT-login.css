@@ -1,0 +1,185 @@
+body, html, #background, #center{
+   width: auto;
+ }
+#mtop{
+   height: 80px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+#left-menu-btn{
+  display: none;
+}
+#menu{
+   height: 50px;
+   width: 50px;
+   background-color: red;
+   border-radius: 4px;
+   border: 3px solid yellow;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+#bar{
+  height: 8px;
+  width: 35px;
+  background-color: beige;
+  margin: 3px 0px;
+}
+#logo-img{
+  display: none;
+  padding-left: 0px;
+  z-index: -1;
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px){
+  #background{
+    height: ;
+    max-width: 479px;
+    min-width: 320px;
+  }
+  #center{
+     height: 100vh;
+     width: 100vw;
+     position: relative;
+  }
+  #sidebarBeforeContent{
+     height: fit-content;
+     display: none;
+     position: absolute;
+     left: 25%;
+     top: 10%;
+  }
+  #mtop{
+     height: 100px;
+     width: max-device-width;
+     position: relative;                                                                                                                                                                                                                                                                                                                                                                                                                         justify-content: start;
+  }
+  #logo-img{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;    
+    left: 15%;   
+    top: 25%;
+    display: block;                                                                                                                                                                                                                                                                                                                                                                                                            padding-left: 200px;                                                                                                                                                                                                                                                                                                                                                                                                                           justify-content: start;
+  }
+  #logo{
+    display: none;
+  }
+  #left-menu-btn{
+     display: block;
+     position: absolute;
+     top: 25%;
+     left: 25%;
+  }
+  #contentOuterContainer{
+     padding-top: 0px;
+     position: absolute;
+     top: 10%;
+     left: 25%;
+     height: 600px;
+     max-width: 479px;
+     min-width: 320px;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+  #background{
+    height: 900px;
+    width: 100vw;
+  }
+  #center{
+     height: 100vh;
+     width: 100vw;
+     position: relative;
+  }
+  #sidebarBeforeContent{
+     height: fit-content;
+     display: none;
+     position: absolute;
+     left: 25%;
+     top: 10%;
+  }
+  #mtop{
+     height: 100px;
+     width: max-device-width;
+     position: relative;                                                                                                                                                                                                                                                                                                                                                                                                                         justify-content: start;
+  }
+  #logo-img{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;    
+    left: 15%;   
+    top: 25%;
+    display: block;                                                                                                                                                                                                                                                                                                                                                                                                            padding-left: 200px;                                                                                                                                                                                                                                                                                                                                                                                                                           justify-content: start;
+  }
+  #logo{
+    display: none;
+  }
+  #left-menu-btn{
+     display: block;
+     position: absolute;
+     top: 25%;
+     left: 25%;
+  }
+  #contentOuterContainer{
+    height: 80%;
+    width: 60%;
+     padding-top: 0px;
+     position: absolute;
+     top: 10%;
+     left: 25%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+  
+  #background{
+    height: 900px;
+    width: 100vw;
+  }
+  #center{
+     height: 100vh;
+     width: 100vw;
+     position: relative;
+  }
+  #sidebarBeforeContent{
+     height: fit-content;
+     display: none;
+     position: absolute;
+     left: 25%;
+     top: 10%;
+  }
+  #mtop{
+     height: 100px;
+     width: max-device-width;
+     position: relative;                                                                                                                                                                                                                                                                                                                                                                                                                         justify-content: start;
+  }
+  #logo-img{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;    
+    left: 15%;   
+    top: 25%;
+    display: block;                                                                                                                                                                                                                                                                                                                                                                                                            padding-left: 200px;                                                                                                                                                                                                                                                                                                                                                                                                                           justify-content: start;
+  }
+  #logo{
+    display: none;
+  }
+  #left-menu-btn{
+     display: block;
+     position: absolute;
+     top: 25%;
+     left: 25%;
+  }
+  #contentOuterContainer{
+     padding-top: 0px;
+     position: absolute;
+     top: 10%;
+     left: 25%;
+  }
+}
